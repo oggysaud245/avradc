@@ -12,7 +12,7 @@ This project demonstrates how to use the Analog-to-Digital Converter (ADC) on an
 ## Requirements
 
 - ATmega328P microcontroller
-- AVR-GCC toolchain
+- AVR-G++ toolchain
 - AVRDUDE for programming the microcontroller
 - Serial monitor (e.g., Arduino Serial Monitor, PUTTY)
 
@@ -31,9 +31,9 @@ The main file initializes the ADC and serial communication, reads the ADC value 
 
 ### `lib/adc/adc.h` and `lib/adc/adc.cpp`
 
-These files contain the `MyADC` class, which provides methods to initialize the ADC, read values from ADC channels, and configure the ADC settings.
+These files contain the `MYADC` class, which provides methods to initialize the ADC, read values from ADC channels, and configure the ADC settings.
 
-#### Public Methods in `MyADC` class:
+#### Public Methods in `MYADC` class:
 
 - `MYADC()`: Constructor that initializes the ADC with default settings.
 - `uint16_t read(uint8_t channel)`: Reads the ADC value from the specified channel.
